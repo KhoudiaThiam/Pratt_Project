@@ -1,7 +1,6 @@
 '''
-Author : Ndèye Khoudia Thiam
-Mail: ndeye.thiam.etu@univ-lille.fr
-M1 MISO 2022
+Author : Khoudia
+Mail: khoudiathiampro@gmail.com
 
 '''
 
