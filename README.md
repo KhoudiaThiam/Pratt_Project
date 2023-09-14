@@ -1,8 +1,3 @@
-'''
-Author : Khoudia
-Mail: khoudiathiampro@gmail.com
-
-'''
 
 #PRATT PROJECT 
 
@@ -143,4 +138,7 @@ to have [LIVMFYWD] but instead we have [VIDFY].After analysis, we realize that t
 being non-polar. This may therefore explain the fact that there are more amino acids than expected. Lists can also be factored into a single
 amino acid list. This is the case of [LFI]-[FYWLV]-[VLM]-[MIVF] which becomes in the official pattern [LIVMFYW](4)
 
+## Contact
+
+If you found an issue or would like to submit an improvment to this project , you can contact me via [LinkedIn](https://www.linkedin.com/in/ndeye-khoudia-thiam/) or by email (khoudiathiampro@gmail.com)
 
