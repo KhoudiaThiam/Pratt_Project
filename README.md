@@ -68,7 +68,7 @@ We will also test the optional argument for setting a threshold
 The command line launched will be
 
 ```
-python3 .\pratt.py .\PS00028.fasta .\P28_ex.txt -t 8
+python3 .\pratt.py data\PS00028.fasta data\P28_ex.txt -t 8
 
 ```
 
@@ -79,7 +79,7 @@ where we except to not find the pattern even if this is the same size as the ali
 The commande line launched will be : 
 
 ```
- python3 .\pratt.py .\PS00719.txt .\P719_ex.txt -t 5 
+ python3 .\pratt.py data\PS00719.txt data\P719_ex.txt -t 5 
 
 ```
 
@@ -100,6 +100,9 @@ They represent the variation in length between consecutive x's
 
 
 After launching the first command line , we'll get :
+
+
+
 ---------------------------------------------------------------------------------------------------
 Pattern [CX]-x(2,4)-C-x(3)-[FYILCMVW]-x(8)-H-x(3,5)-H found at position 7 : Cdl..CkagFvrhhdlkrHlri..H
 ------------------------------------------------------------------------------------------------------
@@ -111,27 +114,22 @@ So we checked an X present in our multifasta file and we realized the presence o
 >ZBT32_PANTR/430-450 : PS00028
 Xxl..CgagCpslasmqaHmrg..H
 
+
+Pattern C-x(2,4)-C-x(3)-[FYILCMVW]-x(8)-H-x(3,5)-H found at position 7 : Cdl..CkagFvrhhdlkrHlri..H
+
 This proves that our program is functional but due to the sensitivity of the condition to be an amino acid kept (length of the list ==1 ),
 it will take the 'X' element even if it's one in thousand of sequences.This could therefore be a key element in improving our program.
 If we take off that specific sequence we'll get : 
-----------------------------------------------------------------------------------------------------
-Pattern C-x(2,4)-C-x(3)-[FYILCMVW]-x(8)-H-x(3,5)-H found at position 7 : Cdl..CkagFvrhhdlkrHlri..H
-----------------------------------------------------------------------------------------------------
 
 For the second file(PS00719) , the excepted pattern is :
 
------------------------------------------------------------------------------------
-
 N-x-[LIVMFYWD]-R-[STACN](2)-H-Y-P-x(4)-[LIVMFYWS](2)-x(3)-[DN]-x(2)-G-[LIVMFYW](4)
 
------------------------------------------------------------------------------------
 
 After launching the second command line, we'll get :
--------------------------------------------------------------------------------------------------------------------------
 
 Pattern N-x-[VIDFY]-R-[TCN]-[ASC]-H-Y-P-x(4)-[FWLVM]-[YSLM]-x(2)-[caft]-[DN]-x(2)-G-[LFI]-[FYWLV]-[VLM]-[MIVF] not found
 
--------------------------------------------------------------------------------------------------------------------------
 Once again , the program is functional but we notice that the pattern is the same but the amino acid lists differ. This can be explained by
 the definition of the amino acid list according to the chemical character of these amino acids. For example for the third position, we are supposed 
 to have [LIVMFYWD] but instead we have [VIDFY].After analysis, we realize that the majority of amino acids in [LIVMFYWD] have the particularity of
