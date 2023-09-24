@@ -1,5 +1,5 @@
 
-#PRATT PROJECT 
+# PRATT PROJECT 
 
 
 The purpose of this program is to determine a prosite motif from a set of proteins.A Prosite pattern is used to represent a functional site of a protein.
@@ -7,7 +7,8 @@ From a multifasta file, it returns the template created and allows you to search
 
 
 
-##Description
+
+## Description
 
 This script takes as main arguments a multifasta file that is used to obtain the Prosite model and a file in which this model will be searched.
 It also accepts one optional argument that will define a threshold.If there are only the first two arguments, the model search will be performed
